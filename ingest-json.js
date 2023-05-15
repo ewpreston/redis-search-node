@@ -23,7 +23,7 @@ const updateCache = async (json) => {
         })
 
         console.log(`symbol sub: ${item.symbol.substring(1)}`)
-        //redis.call("FT.SUGADD", "fadd", item.symbol.substring(1), 1)
+        redis.call("FT.SUGADD", "fadd", item.symbol, 1)
     })
 
     console.log(`First symbol ${json[0].symbol}`)
