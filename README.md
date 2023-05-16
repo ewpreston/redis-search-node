@@ -42,3 +42,12 @@ This file executes a search against the populated Redis database
 ```bash
 $ node search.js <text>
 ```
+
+### `suggest.js`
+
+This file uses FT.SUGGET to return the values that start with the characters provided. It's commonly used for autocomplete
+
+```bash
+$ node suggest.js <text>
+```
+
